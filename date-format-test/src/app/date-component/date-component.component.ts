@@ -24,7 +24,7 @@ export class DateComponentComponent implements OnInit {
     const pipe = new DatePipe('en');// Why not 'de' ? 
 
     this.myForm = this.formBuilder.group({
-      startDate: new FormControl(new Date('01/22/2021')),
+      startDate: new FormControl(new Date('01/12/2021')),
       endDate: new FormControl(formatDate(new Date(), 'yyyy-MM-dd', 'en')),
       pipeDate: new FormControl(pipe.transform(new Date(1,12,2021), 'dd-MM-yyyy')),
     });
